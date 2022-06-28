@@ -82,11 +82,17 @@ while True:
 
     if game_over:
         screen.fill(black)
-        font = pygame.font.SysFont('tlwgtypo', 80)
-        text1 = font.render(game_over, True, white)
-        text_rect = text1.get_rect()
-        text_x = screen.get_width() / 2 - text_rect.width / 2
-        text_y = screen.get_height() / 2 - text_rect.height / 2
-        screen.blit(text1, [text_x, text_y])
+        font1 = pygame.font.SysFont('tlwgtypo', 80)
+        font2 = pygame.font.SysFont('tlwgtypo', 20)
+        text1 = font1.render(game_over, True, white)
+        text2 = font2.render('To play again press SPACE', True, white)
+        text1_rect = text1.get_rect()
+        text2_rect = text2.get_rect()
+        text1_x = screen.get_width() / 2 - text1_rect.width / 2
+        text1_y = screen.get_height() / 2 - text1_rect.height / 2 - 20
+        text2_x = screen.get_width() / 2 - text2_rect.width / 2
+        text2_y = screen.get_height() / 2 - text2_rect.height / 2 + 30
+        screen.blit(text1, [text1_x, text1_y])
+        screen.blit(text2, [text2_x, text2_y])
 
     pygame.display.update()
