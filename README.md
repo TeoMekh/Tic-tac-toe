@@ -1,2 +1,7 @@
+<div align=center margin= auto> 
+  <img src="image.jpeg"  width=60%>
+</div>
+
+
 # Tic-tac-toe
-Tic tac toe game using python and pygame
+Classic Tic tac toe game for two players using python and pygame.
